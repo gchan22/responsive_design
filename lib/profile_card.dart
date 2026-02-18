@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_design/login_screen.dart';
 
 class ProfileCard extends StatelessWidget {
   const ProfileCard({super.key});
@@ -21,7 +22,7 @@ class ProfileCard extends StatelessWidget {
                   children: [
                     _buildAvatar(),
                     SizedBox(height: 20),
-                    Expanded(child: _buildContent(),),
+                    Expanded(child: _buildContent(context),),
                   ],
                 );
               } 
@@ -31,7 +32,7 @@ class ProfileCard extends StatelessWidget {
                   children: [
                     _buildAvatar(),
                     SizedBox(height: 20),
-                    _buildContent(),
+                    _buildContent(context),
                   ],
                 );
               }
@@ -57,7 +58,7 @@ Widget _buildAvatar() {
   );
 }
 
-Widget _buildContent() {
+Widget _buildContent(BuildContext context) {
   return Column(
     mainAxisSize: MainAxisSize.min,
     crossAxisAlignment: CrossAxisAlignment.start, //left justifies
@@ -69,7 +70,10 @@ Widget _buildContent() {
       Text('Major: Computer Science'),
       Text('Favorite class: CS220'),
       SizedBox(height: 20),
-      ElevatedButton(onPressed: () {}, child: Text('Login in')),
+      ElevatedButton(onPressed: () {
+        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LoginScreen())
+        );
+      }, child: Text('Login in')),
     ],
   );
 }
