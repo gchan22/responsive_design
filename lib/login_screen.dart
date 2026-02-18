@@ -174,7 +174,7 @@ class _LoginScreenState extends State<LoginScreen> {
     if (email.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-            content: Text('Please enter your email to reset password')),
+            content: Text('Enter your email to reset password')),
       );
       return;
     }
