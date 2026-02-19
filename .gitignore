@@ -56,3 +56,12 @@ macos/build/
 windows/build/
 ios/Flutter/
 ios/Runner.xcodeproj/project.xcworkspace/
+# Firebase Config Files
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# FlutterFire Configuration (contains API keys)
+lib/firebase_options.dart
+
+# Environment Variables
+.env
