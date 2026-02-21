@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_design/auth_service.dart';
-import 'package:responsive_design/profile_card.dart';
 import 'package:responsive_design/sign_up_screen.dart';
 import 'package:responsive_design/success_screen.dart';
 

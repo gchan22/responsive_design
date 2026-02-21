@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_design/auth_service.dart';
 import 'package:responsive_design/login_screen.dart';
-import 'package:responsive_design/profile_card.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
